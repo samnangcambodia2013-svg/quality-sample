@@ -1,29 +1,27 @@
-"homepage": "https://samnangcambodia2013-svg.github.io/quality-sample",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
 {
   "name": "my-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://samnangcambodia2013-svg.github.io/quality-sample",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "lucide-react": "^1.44.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.7",
+    "@tailwindcss/vite": "^4.3.3",
     "@vitejs/plugin-react": "^6.1.1",
-    "gh-pages": "^6.3.0",
-    "oxlint": "^1.81.0",
+    "gh-pages": "^6.0.0",
+    "tailwindcss": "^4.3.3",
     "vite": "^8.3.0"
   }
 }
